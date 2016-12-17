@@ -1,0 +1,13 @@
+<h1>Company Information</h1>
+<%= link_to "Add Company" %>
+<br><br><hr>
+
+
+<% @companies.each do |company| %>
+  <p><b>Name:</b> <%= company.name %></p>
+  <p><b>Description:</b> <%= company.description %></p>
+  <p><b>Email:</b> <%= company.email %></p>
+
+  <%= link_to "Delete" %> <hr>
+
+<% end %>

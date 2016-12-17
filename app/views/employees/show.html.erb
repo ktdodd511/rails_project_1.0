@@ -1,0 +1,16 @@
+<h1>Employee Information</h1>
+<hr>
+<% @employees.each do |employee| %>
+  <p><b>Name:</b> <%= employee.name %></p>
+  <p><b>Title:</b> <%= employee.position_title %></p>
+  <p><b>Phone Number:</b> <%= employee.phone_number %></p>
+  <p><b>Email:</b> <%= employee.email %></p>
+  <p><b>Emergency Contact:</b> <%= employee.emergency_contact %></p>
+  <p><b>Birthday:</b> <%= employee.birthday %></p>
+  <p><b>Equity:</b> <%= employee.equity %></p>
+  <p><b>Full-Time:</b> <%= employee.full_time %></p>
+
+
+  <%= link_to "Delete" %> <hr>
+
+<% end %>
