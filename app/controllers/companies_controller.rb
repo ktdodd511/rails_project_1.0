@@ -13,4 +13,10 @@ class CompaniesController < ApplicationController
     redirect_to('/companies')
   end
 
+  private
+
+  def company_params
+    params.require(:company).permit(:name, :description, :email)
+  end
+  
 end

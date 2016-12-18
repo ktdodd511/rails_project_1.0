@@ -1,23 +1,35 @@
 <h1>New employee information</h1>
 <hr><br>
 
-<%= form_for @employee do |k| %>
+<%= form_for @employee do |f| %>
   <span>Name: </span>
-  <%= k.text_field :name, required: true %><br>
+  <%= f.text_field :name, required: true %><br>
   <span>Title: </span>
-  <%= k.text_field :position_title %><br>
+  <%= f.text_field :position_title %><br>
   <span>Phone Number: </span>
-  <%= k.text_field :phone_number %><br>
+  <%= f.text_field :phone_number %><br>
   <span>Email: </span>
-  <%= k.text_field :email %><br>
+  <%= f.text_field :email %><br>
   <span>Emergency Contact: </span>
-  <%= k.text_field :emergency_contact %><br>
+  <%= f.text_field :emergency_contact %><br>
   <span>Birthday: </span>
-  <%= k.text_field :birthday %><br>
+  <%= f.text_field :birthday %><br>
   <span>Equity: </span>
-  <%= k.text_field :equity %><br>
+  <%= f.text_field :equity %><br>
   <span>Full-Time: </span>
-  <%= k.text_field :full_time %><br>
+  <%= f.text_field :full_time %><br>
+  <span>Start Date: </span>
+  <%= f.text_field :start_date %><br>
+  <span>Salary: </span>
+  <%= f.text_field :salary %><br>
+  <span>Shirt Size: </span>
+  <%= f.text_field :shirt_size %><br>
+  <span>Favorite Foods: </span>
+  <%= f.text_field :favorite_foods %><br>
+  <span>Allergies: </span>
+  <%= f.text_field :allergies %><br>
+  <span>Badge Photo: </span>
+  <%= f.text_field :badge_photo %><br>
   <br>
-  <%= k.submit %>
+  <%= f.submit %>
 <% end %>
