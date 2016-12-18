@@ -1,8 +1,6 @@
 <h1>Company Information</h1>
-<%= link_to "Add Company" %>
-<br><br><hr>
-
-
+<%= link_to "Add New Company", new_company_path %>
+<hr>
 <% @companies.each do |company| %>
   <p><b>Name:</b> <%= company.name %></p>
   <p><b>Description:</b> <%= company.description %></p>
